@@ -20,7 +20,7 @@
 	},
 	"require-dev" : {
 		"silex/silex" : "~2.0",
-		"phpunit/phpunit" : "~5.3",
+		"phpunit/phpunit" : "~4.8 || ~5.3",
 		"codacy/coverage" : "dev-master"
 	},
 	"autoload" : {
