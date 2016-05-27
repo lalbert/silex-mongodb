@@ -1,3 +1,6 @@
+## Run on container environment
+sudo: false
+
 language: php
 
 services:
@@ -13,6 +16,11 @@ matrix:
   fast_finish: true
   allow_failures:
     - php: hhvm
+    
+## Cache composer bits
+cache:
+  directories:
+    - $HOME/.composer/cache
     
 before_script:
   # Install mongodb extension
