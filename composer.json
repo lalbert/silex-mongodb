@@ -18,9 +18,21 @@
 		"mongodb/mongodb" : "~1.0",
 		"silex/api" : "~2.0"
 	},
-    "autoload" : {
-        "psr-4" : {
-            "Lalbert\\Silex\\" : "src/"
-        }
-    }
+	"require-dev" : {
+		"silex/silex" : "~2.0",
+		"phpunit/phpunit" : "~5.3",
+		"codacy/coverage" : "dev-master"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Lalbert\\Silex\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Lalbert\\Silex\\Tests\\" : [
+				"tests/unit"
+			]
+		}
+	}
 }
