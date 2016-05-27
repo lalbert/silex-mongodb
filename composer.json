@@ -1,0 +1,26 @@
+{
+	"name" : "lalbert/silex-mongodb",
+	"description" : "Simple mongodb service provider for Silex 2.x and official mongodb driver",
+	"license" : "MIT",
+	"homepage" : "https://github.com/lalbert/silex-mongodb",
+	"authors" : [{
+			"name" : "Luc ALBERT",
+			"homepage" : "https://github.com/lalbert"
+		}
+	],
+	"type" : "library",
+	"keywords" : [
+		"silex",
+		"mongodb",
+		"provider"
+	],
+	"require" : {
+		"mongodb/mongodb" : "~1.0",
+		"silex/api" : "~2.0"
+	}
+    "autoload" : {
+        "psr-4" : {
+            "Lalbert\\Silex\\" : "src/"
+        }
+    },
+}
