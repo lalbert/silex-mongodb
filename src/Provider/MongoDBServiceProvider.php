@@ -12,14 +12,14 @@ class MongoDBServiceProvider implements ServiceProviderInterface
     {
         $app['mongodb.config'] = [
             'server' => 'mongodb://localhost:27017',
-            'uriOptions' => [],
+            'options' => [],
             'driverOptions' => [],
         ];
 
         $app['mongodb'] = function ($app) {
             $client = new Client(
                 $app['mongodb.config']['server'],
-                $app['mongodb.config']['uriOptions'],
+                $app['mongodb.config']['options'],
                 $app['mongodb.config']['driverOptions']
             );
 
